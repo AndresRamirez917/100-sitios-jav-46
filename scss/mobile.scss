@@ -49,10 +49,17 @@
 
 //courses
 #courses {
-    .courses-row {
+    .courses-row1, .courses-row2 {
         display: block;
+        margin-bottom: 0;
         .box {
-            margin-bottom: 2.5em;
+            height: 32vh;
+            img {
+                margin-top: -30px;
+            }
+            a {
+                margin-bottom: -60px;
+            }
         }
     }
 }

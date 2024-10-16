@@ -8,7 +8,6 @@ async function getData(){
         const ranInt = randomData(1, characterArr.length);
         const ranIndex = ranInt;
         for(i = 0; i < characterArrSliced.length; i++){
-            console.log("dmadre")
             if(element.id == i){
                 const box = document.createRange().createContextualFragment(`
                     
@@ -17,7 +16,7 @@ async function getData(){
                 <img src="${characterArr[ranIndex][8][1]}" alt="">
                 <h2>Bussiness</h2>
                 <p>Lorem ipsum dolor sit amet consectetur. In pretium pretium feugiat mus sed. Semper laoreet odio tincidunt praesent amet egestas porttitor scelerisque ut.</p>
-                <a href="">get started</a>
+                <a href="" id="linksito">get started</a>
             </div>
             
                     
@@ -32,6 +31,7 @@ async function getData(){
         }
     });
 }
+getData()
 
 async function getData2(){
     const result = await fetch('https://rickandmortyapi.com/api/character');
@@ -43,23 +43,22 @@ async function getData2(){
         const ranInt = randomData(1, characterArr.length);
         const ranIndex = ranInt;
         for(i = 0; i < characterArrSliced.length; i++){
-            console.log("dmadre")
             if(element.id == i){
                 const box = document.createRange().createContextualFragment(`
                     
-              
-            <div class="box">
-                <img src="${characterArr[ranIndex][8][1]}" alt="">
-                <h2>Bussiness</h2>
-                <p>Lorem ipsum dolor sit amet consectetur. In pretium pretium feugiat mus sed. Semper laoreet odio tincidunt praesent amet egestas porttitor scelerisque ut.</p>
-                <a href="">get started</a>
-            </div>
-            
                     
-                    
-                    `)
-                    const courses_row = document.querySelector('.courses-row2');
-                    courses_row.append(box);
+                <div class="box">
+                    <img src="${characterArr[ranIndex][8][1]}" alt="">
+                    <h2>Bussiness</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. In pretium pretium feugiat mus sed. Semper laoreet odio tincidunt praesent amet egestas porttitor scelerisque ut.</p>
+                    <a href="" id="linksito">get started</a>
+                </div>
+                
+                
+                
+                `)
+                const courses_row = document.querySelector('.courses-row2');
+                courses_row.append(box);
             }
         }
         function randomData(min, max) {
@@ -67,5 +66,10 @@ async function getData2(){
         }
     });
 }
+
 getData2()
-getData()
+
+
+
+
+
