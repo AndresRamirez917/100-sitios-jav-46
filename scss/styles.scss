@@ -49,30 +49,30 @@ ul {
     border-radius: 20px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
     flex: 1;
+    //width: 30px;
+    height: 50vh;
+    img {
+        width: 5%;
+        border-radius: 50%;
+        position: absolute;
+        margin-top: -70px;
+    }
+    margin-bottom: 5rem;
 }
 
 #courses {
+display: flex;
+flex: 1;
+gap: 10px;
 
     .courses-row {
-
         .box {
-
-       
-                img {
-                    background: linear-gradient(rgb(245, 59, 3), violet);
-                    height: 70px;
-                    width: 70px;
-                    border-radius: 50%;
-                    padding: 10px;
-                    margin-top: -50px;
-                }
-
                 p {
                     margin-bottom: 1rem;
                 }
-            
-            
-
+        }
+        .box-11 {
+          width: 40%;
         }
     }
 }
@@ -142,6 +142,9 @@ margin: 0 auto;
     width: 80%;
     margin: 0 auto;
     margin-bottom: 5rem;
+    .box {
+        margin-top: 8rem;
+    }
     h3 {
         font-size: 2rem;
         text-align: center;
@@ -154,11 +157,12 @@ margin: 0 auto;
         margin-bottom: 50px;
     }
 
-    .box-1{
+    .box-11{
         background: linear-gradient(rgb(245, 59, 3), violet);
         color: #fff;
-        padding: 50px 0 0 20px;
+      margin-top: -50px;
         font-size: 1.5rem;
+      width: 250px;
     }
 }
 
