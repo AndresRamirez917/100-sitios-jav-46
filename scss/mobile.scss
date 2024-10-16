@@ -1,0 +1,70 @@
+//mainheader
+#mainheader {
+    .navbar {
+        .logo {
+            float: none;
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+
+        ul {
+            float: none;
+            text-align: center;
+            margin: 0 auto;
+            height: 40px;
+            li{
+                display: inline-block;
+                .button-1 {
+                    text-align: center;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
+
+//showcase
+#showcase {
+    text-align: center;
+    margin: 0 auto;
+    .showcase-row {
+        display: block;
+        .showcase-content {
+            .button-2 {
+                margin-bottom: 2em;
+            }
+        }
+        .showcase-img {
+            img {
+                margin-top: 2em;
+                width: 100%;
+            }
+            
+        }
+    }
+}
+
+//courses
+#courses {
+    .courses-row {
+        display: block;
+        .box {
+            margin-bottom: 2.5em;
+        }
+    }
+}
+
+//footer
+#footer {
+    
+    .footer-content {
+        height: 10rem;
+        display: block;
+        align-content: baseline;
+        align-self: auto;
+        align-items: flex-end;
+    }
+}
